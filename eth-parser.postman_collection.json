@@ -1,0 +1,100 @@
+{
+	"info": {
+		"_postman_id": "42613cdb-e619-4328-93f5-0965cb302805",
+		"name": "eth-parser",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15696706"
+	},
+	"item": [
+		{
+			"name": "get-current-block-number",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/get-current-block-number",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"get-current-block-number"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "subscribe",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/subscribe?address=0x95222290DD7278Aa3Ddd389Cc1E1d165CC4BAfe5",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"subscribe"
+					],
+					"query": [
+						{
+							"key": "address",
+							"value": "0x95222290DD7278Aa3Ddd389Cc1E1d165CC4BAfe5"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "unsubscribe",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/unsubscribe?address=0x95222290DD7278Aa3Ddd389Cc1E1d165CC4BAfe5",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"unsubscribe"
+					],
+					"query": [
+						{
+							"key": "address",
+							"value": "0x95222290DD7278Aa3Ddd389Cc1E1d165CC4BAfe5"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-transactions",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/get-transactions?address=0x95222290DD7278Aa3Ddd389Cc1E1d165CC4BAfe5",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"get-transactions"
+					],
+					"query": [
+						{
+							"key": "address",
+							"value": "0x95222290DD7278Aa3Ddd389Cc1E1d165CC4BAfe5"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
